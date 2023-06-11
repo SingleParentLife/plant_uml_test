@@ -1,0 +1,26 @@
+@startuml
+title
+ <b>Use Case SLP_A 001</b> 
+ As a single parent I want to install the SLP App
+end title
+
+left to right direction
+actor "Single Parent" as sp
+
+
+rectangle "Android Phone" {
+   usecase "Open Google Play Store" As OG
+   usecase "Search for SLP App" as SA
+   usecase "Find SLP APP" as FS
+   usecase "Download SLP App" as DP
+   usecase "Run Installer" as RI
+}
+
+sp --> OG
+sp --> SA
+sp --> FS
+sp --> DP
+sp --> RI
+
+
+@enduml
